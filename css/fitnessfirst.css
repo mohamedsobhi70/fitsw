@@ -1,0 +1,265 @@
+/* bg-color #00041c menu bg-color */
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Questrial", sans-serif;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.bg-main {
+  background: #000c2d;
+}
+header {
+  height: 0;
+}
+header .nav-item {
+  margin: 18px 15px;
+}
+header .try-it a {
+  background-color: white;
+  color: black;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 12px 10px;
+  border-radius: 6px;
+}
+header .try-it:hover a {
+  background-color: black;
+  color: white;
+}
+header .nav-link {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+header .nav-link:hover {
+  opacity: 0.8;
+}
+main .landing-page {
+  background: #000c2d;
+  margin-top: -7%;
+}
+main .img-box img {
+  border-radius: 20px;
+  box-shadow: 0 0 10px #444;
+  transition: 0.4s all ease-in-out;
+  z-index: 2;
+  position: relative;
+}
+main .landing-page:hover .img-box img {
+  transform: translate(-20px, -20px) scale(.95) ;
+}
+main .img-box {
+  position: relative;
+  z-index: 3;
+}
+main .img-box::before {
+  z-index: 1;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -20px;
+  left: -20px;
+  border-radius: 20px;
+  border: 1px solid #bdc7c3;
+}
+main .landing-page h1 {
+  font-weight: 900;
+  font-size: 60px;
+}
+main .landing-page p {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.623);
+}
+main .landing-page .fa:not(.fa-angle-right) {
+  width: 35px;
+  height: 35px;
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+}
+main .landing-page .fa:not(.fa-angle-right):hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 12px #000;
+}
+.services {
+  background: #2dce8898;
+}
+.services .carousel-caption {
+  right: 12.5%;
+  left: 12.5%;
+  bottom: 45px;
+  background: rgba(0, 0, 0, 0.65);
+}
+.services h2:before {
+  content: "services";
+  text-transform: uppercase;
+  z-index: -1;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  font-size: 100px;
+  color: rgba(0, 0, 0, 0.05);
+}
+.services p {
+  max-width: 800px;
+  letter-spacing: 1px;
+}
+
+.section {
+  transform: skewY(-7deg);
+}
+.section .content {
+  transform: skewY(7deg);
+  padding-top: 215px;
+  padding-bottom: 150px;
+}
+
+.certifications {
+  background: #000c2d;
+}
+
+.certifications h2:before {
+  content: "certifications";
+  text-transform: uppercase;
+  z-index: -1;
+  bottom: 0;
+  position: absolute;
+  font-size: 100px;
+  color: rgba(255, 255, 255, 0.05);
+}
+.certifications li {
+  color: rgba(255, 255, 255, 0.623);
+}
+i.fa-check {
+  color: #2dce89;
+}
+.Specializations img {
+  z-index: -2;
+  position: relative;
+}
+.Specializations {
+  background: white;
+}
+
+.Specializations h2:before {
+  content: "certifications";
+  text-transform: uppercase;
+  z-index: -1;
+  bottom: 0;
+  position: absolute;
+  font-size: 90px;
+  color: rgba(0, 0, 0, 0.05);
+}
+.testimonials {
+  background: #000c2d;
+}
+.testimonials h2:before {
+  content: "testimonials";
+  text-transform: uppercase;
+  z-index: -1;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  font-size: 100px;
+  color: rgba(255, 255, 255, 0.05);
+}
+.testimonial-box {
+  transition: 0.3s ease-in-out;
+  border-radius: 6px;
+}
+.testimonial-box:hover {
+  transform: translateY(-5px);
+  background-color: rgba(118, 44, 255, 0.08);
+}
+.testimonial-box i {
+  transition: 0.7s ease-in-out;
+}
+.testimonial-box:hover i {
+  transform: rotate(360deg);
+}
+.testimonials .trainer {
+  background: #033ad14f;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.testimonials .trainer:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 0 10px rgb(48, 44, 255);
+}
+.testimonials .trainer img {
+  border-radius: 10px;
+}
+.testimonials .trainer p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.715);
+}
+.training {
+  background: #ffffff;
+}
+.training .nav-tabs {
+  border-bottom: none;
+}
+.training .box h5{
+  color: #2dce89;
+} 
+.training h2:before {
+  content: "training";
+  text-transform: uppercase;
+  z-index: -1;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  font-size: 100px;
+  color: rgba(255, 255, 255, 0.05);
+}
+footer {
+  background-color: #000c2d;
+}
+footer h2 {
+  font-size: 30px;
+}
+footer a {
+  color: #ffffffb7;
+  transition: 0.3s ease-in-out;
+  font-size: 20px;
+}
+footer .social-media span {
+  color: rgba(255, 255, 255, 0.801);
+}
+footer .social-media a i {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  main .landing-page h1 {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  .section .content {
+    transform: skewY(7deg);
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .testimonials .h1 {
+    font-size: 30px;
+  }
+  .testimonials .h1 {
+    font-size: 30px;
+  }
+}
